@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <table class="table">
+      <thead>
+        <tr>
+
+          <th scope="col">States</th>
+          <th scope="col">Confirmed</th>
+          <th scope="col">Active</th>
+          <th scope="col">Recovered</th>
+          <th scope="col">Deceased</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tab of tabResult | async">
+          <td>{{tab.States}}</td>
+          <td>{{tab.Confirmed}}</td>
+          <td>{{tab.Active}}</td>
+          <td>{{tab.Recovered}}</td>
+          <td>{{tab.Deceased}}</td>
+        </tr>
+
+
+      </tbody>
+
+
+
+    </table>
+
+  </div>
+</div>

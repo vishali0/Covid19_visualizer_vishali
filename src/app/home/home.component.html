@@ -1,0 +1,88 @@
+﻿<!-- <div>
+  <button type="button" class="btn btn-primary">Overall cases</button>
+  <button type="button" class="btn btn-primary">Charts</button>
+  <button type="button" class="btn btn-primary">Statewise cases</button>
+</div> -->
+
+<style>
+  .container {
+    height: 200px;
+    position: relative;
+    border: 3px solid rgb(29, 28, 31);
+  }
+
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+</style>
+
+<div class="p-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <h1>Hi {{user.firstName}}!</h1>
+        <p>Click on the buttons below to know more about covid-19 !</p>
+        <p><a routerLink="/users">Manage Users</a></p>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <h3 style="text-align: center;">Symptoms</h3>
+        <div class="row">
+          <!-- <div class="Eb8Pib"> -->
+          <div class="gVDAsd QFR6mb col-lg-4 col-md-4">
+            <div class="Eq0l7e "><img alt="Fever"
+                src="https://www.gstatic.com/healthricherkp/covidsymptoms/light_fever.gif" height="55px" width="55px">
+            </div>
+            <div class="EdNVSd">Fever</div>
+          </div>
+          <div class="gVDAsd QFR6mb col-lg-4 col-md-4">
+            <div class="Eq0l7e "><img alt="Dry cough"
+                src="https://www.gstatic.com/healthricherkp/covidsymptoms/light_cough.gif" height="55px" width="55px">
+            </div>
+            <div class="EdNVSd">Dry cough</div>
+          </div>
+          <div class="gVDAsd QFR6mb  col-lg-4 col-md-4">
+            <div class="Eq0l7e"><img alt="Tiredness"
+                src="https://www.gstatic.com/healthricherkp/covidsymptoms/light_tiredness.gif" height="55px"
+                width="55px">
+            </div>
+            <div class="EdNVSd">Tiredness</div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- <div class="vertical-center"> -->
+    <div class="col-lg-9" style="margin-top: 8%;">
+      <button type="button" class="btn btn-danger btn-centerd" routerLink="/overall_cases">Overall
+        cases</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" class="btn btn-danger"
+        routerLink="/charts">Charts</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" class="btn btn-danger" routerLink="/statewise_cases">Statewise cases</button>
+    </div>
+    <!-- </div> -->
+
+    <div class="col-lg-3">
+      <h3>Preventive measures</h3>
+      <div class="Gif " style="width: 100px; height: 100px;"><img
+          src="https://media1.tenor.com/images/f841ec1fac4b581baf2dde568f231f68/tenor.gif?itemid=16678450" width="100"
+          height="100" alt="Coronavirus Covid19 GIF - Coronavirus Covid19 Covid GIFs"
+          style="max-width: 100px; background-color: rgb(63, 63, 63);"></div>
+
+    </div>
+
+
+
+
+  </div>
+
+</div>

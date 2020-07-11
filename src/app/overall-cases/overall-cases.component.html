@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid_19</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="card-deck">
+      <div class="card">
+        <img src='https://worldcomgroup.com/wp-content/uploads/2020/03/cdc-w9KEokhajKw-unsplash-2048x1152.jpg'
+          class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Active Cases:820916</h5>
+          <p class="card-text">If you have mild symptoms and are otherwise healthy, self-isolate and contact your
+            medical
+            provider or a COVID-19 information line for advice.</p>
+          <p class="card-text">
+            <small class="text-muted" *ngFor="let tab of (tabResult | async)?.confirmed;">{{tab.value}}</small>
+          </p>
+          <!-- <ion-card *ngFor="let tab of tabResult">
+            <ion-card-header>
+              {{tab.confirmed}}
+            </ion-card-header> 
+          </ion-card>-->
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.jax.org/-/media/jaxweb/images/jax-mice-and-services/blog-images/2020/coronavirusblogimg.jpg?la=en&hash=76F7955108B6F3863DFEBDAFCB3C5B72B203DF26"
+          class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Cured/Discharged:515386</h5>
+          <p class="card-text">COVID-19 affects different people in different ways. Most infected people will develop
+            mild
+            to moderate illness and recover without hospitalization.</p>
+          <p class="card-text">
+            <small class="text-muted" *ngFor="let tab of (tabResult | async)?.recovered;">{{tab.value}}</small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://content.techgig.com/thumb/msid-74927267,width-860,resizemode-4/Google-launches-COVID-19-website-in-India-aggregates-authenticated-information-and-tools.jpg?131034"
+          class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Deaths:22123</h5>
+          <p class="card-text">On average it takes 5–6 days from when someone is infected with the virus for symptoms to
+            show, however it can take up to 14 days.</p>
+          <p class="card-text">
+            <small class="text-muted" *ngFor="let tab of (tabResult | async)?.deaths;">{{tab.value}}</small>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <h3 style="text-align: center;">Click on Home!</h3>
+
+  <!-- <div class="container-fluid">
+    <div class="row">
+       <div class="Eb8Pib">
+        <div class="gVDAsd QFR6mb col-lg-3 col-md-3">
+          <div class="Eq0l7e "><img alt="Fever"
+              src="https://www.gstatic.com/healthricherkp/covidsymptoms/light_fever.gif" height="55px" width="55px">
+          </div>
+          <div class="EdNVSd">Fever</div>
+        </div>
+        <div class="gVDAsd QFR6mb ">
+          <div class="Eq0l7e "><img alt="Dry cough"
+              src="https://www.gstatic.com/healthricherkp/covidsymptoms/light_cough.gif" height="55px" width="55px">
+          </div>
+          <div class="EdNVSd">Dry cough</div>
+        </div>
+        <div class="gVDAsd QFR6mb  col-lg-3 col-md-3">
+          <div class="Eq0l7e"><img alt="Tiredness"
+              src="https://www.gstatic.com/healthricherkp/covidsymptoms/light_tiredness.gif" height="55px" width="55px">
+          </div>
+          <div class="EdNVSd">Tiredness</div>
+        </div>
+      </div> 
+    </div>
+  </div> -->
+
+
+</body>
+
+</html>

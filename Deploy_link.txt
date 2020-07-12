@@ -1,0 +1,10 @@
+Netlify link:
+https://zealous-jennings-0fc955.netlify.app/
+
+
+Github link:
+https://github.com/vishali0/Covid_19_visualizer_vishali
+
+
+commit id:
+2f3961c8f765ff3eb7a0e484a30e8e49a9cfda1e
